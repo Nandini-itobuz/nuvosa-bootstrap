@@ -16,7 +16,7 @@
 }
 
 .nav-outline{
-    outline: none;
+    outline: none !important;
 }
 
 .nav-list{
@@ -28,17 +28,32 @@
     }
 }
 
+.bottom-input{
+    outline: none;
+}
 
 .hero-img{
     @include img-style(auto, 50vw );
  } 
 
+ .team-icon:hover{
+    border:  3px solid #6F77F1;
+    cursor: pointer;
+ }
+
+ .team-shadow:hover{
+    box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.5);
+    cursor: pointer;
+ }
 
  .website-text{
     width: 90% !important;
     text-align: center;
 }
 
+.grey-background{
+    background-color: #F2F2F2;
+}
 
 .grey-text{
 color: #828282;}
@@ -82,12 +97,17 @@ color: #828282;}
     box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.10);
 }
 
-.reasons-item{
-    width: 85%;
+
+.reason-item{
+   &:hover{
+         box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.9);
+        cursor: pointer;
+   }
 }
 
-.what-seo-text{
-    margin: 10% ;}
+.reasons{
+    background-color: #FAFAFA;
+}
 
 .seo-item{
     &:hover{
@@ -97,14 +117,16 @@ color: #828282;}
 }
 
 .web-speed-img{
-    @include img-style(auto, 40vw )
+    @include img-style(auto, 75vw )
 }
 
 .plans-item{
     &:hover{
         cursor: pointer;
+        transform: scale(1.05)
     }
 }
+
 
 .team-img{
     @include img-style(auto, 34% );
@@ -112,8 +134,14 @@ color: #828282;}
     margin-right: auto;
 }
 
+.bottom-btn{
+    background-color: #6F77F1 !important;
+}
 
+.what-seo-img{
+    @include img-style(auto, 90% )
 
+}
 
 @media (min-width:768px) {
     .reasons-item{
@@ -128,7 +156,10 @@ color: #828282;}
         font-size: 16.5px !important;
      }
 
-
+     .web-speed-img{
+        @include img-style(auto, 35vw )
+    }
+    
     
 
 }
@@ -147,7 +178,7 @@ color: #828282;}
     
 
     .what-seo-img{
-        @include img-style(auto, 100% )
+        @include img-style(auto, 50% )
     
     }
     
@@ -155,6 +186,11 @@ color: #828282;}
         @include img-style(auto,40% );
         margin: 0% ;
     }
+
+    
+.what-seo-text{
+    margin: 10% ;}
+
 
     .team{
         width: 70% !important;

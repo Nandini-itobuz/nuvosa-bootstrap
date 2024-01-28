@@ -3,4 +3,146 @@
   margin: 0px;
   padding: 0px;
   font-family: Poppins;
+}
+
+.nav-outline {
+  outline: none;
+}
+
+.nav-list:hover {
+  border-bottom: 3px solid;
+  -o-border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241), rgb(111, 119, 241), rgba(255, 255, 255, 0), rgb(111, 119, 241));
+     border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241), rgb(111, 119, 241), rgba(255, 255, 255, 0), rgb(111, 119, 241));
+  border-image-slice: 1;
+  cursor: pointer;
+}
+
+.hero-img {
+  height: auto;
+  width: 50vw;
+}
+
+.website-text {
+  width: 90% !important;
+  text-align: center;
+}
+
+.grey-text {
+  color: #828282;
+}
+
+.blue-text {
+  color: #6F77F1;
+}
+
+.card-text {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.card-group-v1 {
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
+}
+
+.margin-class {
+  margin-top: 100px;
+}
+
+.grey-font {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.solution-img {
+  height: 35vh;
+  width: 70vw;
+}
+
+.solution-up-curve {
+  background-image: url("images/solution/curve-above.svg");
+  height: auto;
+  width: 100%;
+}
+
+.solution-down-curve {
+  background-image: url("images/solution/Vector 17.png");
+  height: auto;
+  width: 100%;
+}
+
+.stats-item {
+  cursor: pointer;
+  box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.reasons-item {
+  width: 85%;
+}
+
+.what-seo-text {
+  margin: 10%;
+}
+
+.seo-item:hover {
+  box-shadow: 5px 25px 37px 0px rgba(2, 22, 5, 0.06);
+  cursor: pointer;
+}
+
+.web-speed-img {
+  height: auto;
+  width: 40vw;
+}
+
+.plans-item:hover {
+  cursor: pointer;
+}
+
+.team-img {
+  height: auto;
+  width: 34%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .reasons-item {
+    width: 55%;
+  }
+  .hero-img {
+    height: auto;
+    width: 34vw;
+  }
+  .hero-details {
+    font-size: 16.5px !important;
+  }
+}
+@media (min-width: 997px) {
+  .hero-heading {
+    font-size: 2.8rem;
+    width: 76%;
+  }
+  .website-text {
+    width: 50% !important;
+    text-align: start;
+  }
+  .what-seo-img {
+    height: auto;
+    width: 100%;
+  }
+  .what-seo-text {
+    height: auto;
+    width: 40%;
+    margin: 0%;
+  }
+  .team {
+    width: 70% !important;
+  }
+  .form-inputs {
+    width: 70% !important;
+  }
+}
+@media (min-width: 1400px) {
+  .team {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

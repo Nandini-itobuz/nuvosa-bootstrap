@@ -5,25 +5,53 @@
   font-family: Poppins;
 }
 
+/*nav*/
 .nav-outline {
   outline: none !important;
 }
 
 .nav-list:hover {
   border-bottom: 3px solid;
-  -o-border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241), rgb(111, 119, 241), rgba(255, 255, 255, 0), rgb(111, 119, 241));
-     border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241), rgb(111, 119, 241), rgba(255, 255, 255, 0), rgb(111, 119, 241));
+  -o-border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241) 70%, white 70%, white 80%, rgb(111, 119, 241) 80%, rgb(111, 119, 241));
+     border-image: linear-gradient(to right, rgb(111, 119, 241), rgb(111, 119, 241) 70%, white 70%, white 80%, rgb(111, 119, 241) 80%, rgb(111, 119, 241));
   border-image-slice: 1;
   cursor: pointer;
 }
 
-.bottom-input {
-  outline: none;
+.letstalk::-moz-placeholder {
+  color: black;
 }
 
+.letstalk::placeholder {
+  color: black;
+}
+
+/*hero*/
 .hero-img {
   height: auto;
-  width: 50vw;
+  width: 60vw;
+}
+
+.hero-team {
+  width: 19%;
+  background-color: transparent;
+  box-shadow: 0px 3.17px 52.298px 0px rgba(0, 0, 0, 0.1);
+  top: 69%;
+  right: 30%;
+}
+
+.man-1 {
+  margin-top: 4%;
+}
+
+.man-2, .man-3, .man-4, .add {
+  margin-left: -11%;
+}
+
+#diamonds {
+  background-image: url(images/Group-box.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .team-icon:hover {
@@ -41,8 +69,38 @@
   text-align: center;
 }
 
+.web-list:hover {
+  border-bottom: 4px solid #6F77F1;
+}
+
 .grey-background {
   background-color: #F2F2F2;
+}
+
+#one {
+  background-image: url("images/optimizing-website/1.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#two {
+  background-image: url("images/optimizing-website/2.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#three {
+  background-image: url("images/optimizing-website/3.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: white;
+}
+
+#four {
+  background-image: url("images/optimizing-website/4.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: white;
 }
 
 .grey-text {
@@ -76,21 +134,23 @@
   width: 70vw;
 }
 
-.solution-up-curve {
-  background-image: url("images/solution/curve-above.svg");
-  height: auto;
-  width: 100%;
-}
-
-.solution-down-curve {
-  background-image: url("images/solution/Vector 17.png");
-  height: auto;
-  width: 100%;
-}
-
 .stats-item {
   cursor: pointer;
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.client-main::-webkit-scrollbar {
+  display: none;
+}
+
+.client-card {
+  background-image: url(images/clients/colen.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.solutions {
+  background-color: #FAFAFA;
 }
 
 .reason-item:hover {
@@ -112,9 +172,39 @@
   width: 75vw;
 }
 
+.plans-item {
+  background-color: white;
+}
+.plans-item h5 {
+  color: #6F77F1;
+}
+.plans-item .card-body {
+  color: #828282;
+}
+.plans-item a {
+  border: 1px solid black;
+}
 .plans-item:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  background-image: url("images/blue-bg.svg");
+  height: auto;
+  width: 18rem;
+  background-position: center;
+}
+.plans-item:hover h5 {
+  color: white !important;
+}
+.plans-item:hover .card-body {
+  color: white;
+}
+.plans-item:hover .card-body a {
+  border: 1px solid white;
+  color: white;
+}
+.plans-item:hover .card-body a:hover {
+  background-color: #FAD725;
+  border: 0px solid black;
+  color: black;
 }
 
 .team-img {
@@ -131,6 +221,10 @@
 .what-seo-img {
   height: auto;
   width: 90%;
+}
+
+.bottom-input {
+  outline: none;
 }
 
 @media (min-width: 768px) {

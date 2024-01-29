@@ -14,7 +14,7 @@
     font-size: $size;
     font-weight: $weight;
 }
-
+/*nav*/
 .nav-outline{
     outline: none !important;
 }
@@ -22,19 +22,42 @@
 .nav-list{
     &:hover{
         border-bottom: 3px solid;
-        border-image: linear-gradient(to right, rgba(111, 119, 241, 1),rgba(111, 119, 241, 1),rgba(111, 119, 241, 1),    rgba(255, 255,255,0), rgba(111, 119, 241, 1)) ;
+        border-image: linear-gradient(to right, rgba(111, 119, 241, 1),rgba(111, 119, 241, 1) 70%,white 70%, white 80%,  rgba(111, 119, 241, 1) 80%, rgba(111,119,241,1)) ;
         border-image-slice: 1;
         cursor: pointer;
     }
 }
-
-.bottom-input{
-    outline: none;
+.letstalk::placeholder{
+    color: black;
 }
 
+/*hero*/
+
 .hero-img{
-    @include img-style(auto, 50vw );
+    @include img-style(auto, 60vw );
  } 
+
+ .hero-team{
+width:19%;
+background-color: transparent;
+box-shadow: 0px 3.17px 52.298px 0px rgba(0, 0, 0, 0.10);
+ top: 69%;
+right:30%
+
+ }
+
+ .man-1{
+    margin-top: 4%;
+ }
+ .man-2 , .man-3, .man-4, .add{
+    margin-left: -11%;
+ }
+
+ #diamonds{
+    background-image: url(images/Group-box.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
 
  .team-icon:hover{
     border:  3px solid #6F77F1;
@@ -46,14 +69,55 @@
     cursor: pointer;
  }
 
+
  .website-text{
     width: 90% !important;
     text-align: center;
 }
 
+.web-list{
+    &:hover{
+        border-bottom:  4px solid #6F77F1;
+    }
+}
+
 .grey-background{
     background-color: #F2F2F2;
 }
+
+#one{
+    background-image: url("images/optimizing-website/1.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#two{
+    background-image: url("images/optimizing-website/2.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#three{
+    background-image: url("images/optimizing-website/3.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: white;
+}
+
+#four{
+    background-image: url("images/optimizing-website/4.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    background-color: white;
+}
+
+// .blue-circle{
+//     background-image: url("images/Ellipse\ 28.svg");
+//     @include img-style(30vw,10vw );
+//     background-repeat: no-repeat;
+//     background-position: bottom right;
+// }
 
 .grey-text{
 color: #828282;}
@@ -82,21 +146,34 @@ color: #828282;}
     @include img-style(35vh,70vw);
 }
 
-.solution-up-curve{
-    background-image: url("images/solution/curve-above.svg");
-    @include img-style(auto,100% );
-}
+// .solution-up-curve{
+//     background-image: url("images/solution/curve-above.svg");
+//     @include img-style(auto,100% );
+// }
 
-.solution-down-curve{
-    background-image: url("images/solution/Vector\ 17.png");
-    @include img-style(auto,100% )
-}
+// .solution-down-curve{
+//     background-image: url("images/solution/Vector\ 17.png");
+//     @include img-style(auto,100% )
+// }
 
 .stats-item{
     cursor: pointer;
     box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.10);
 }
 
+.client-main::-webkit-scrollbar{
+    display: none;
+}
+
+.client-card{
+    background-image: url(images/clients/colen.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.solutions{
+    background-color: #FAFAFA;
+}
 
 .reason-item{
    &:hover{
@@ -121,10 +198,39 @@ color: #828282;}
 }
 
 .plans-item{
+    background-color: white;
+    h5{
+        color: #6F77F1;
+    }
+    .card-body{
+        color: #828282;
+    }
+    a{
+        border: 1px solid black;
+    }
     &:hover{
         cursor: pointer;
-        transform: scale(1.05)
+        background-image: url("images/blue-bg.svg");
+        @include img-style(auto,18rem );
+        background-position: center;
+        h5{
+            color: white !important;
+        }
+        .card-body{
+            color: white;
+            a{
+                border: 1px solid white;
+                color: white;
+                &:hover{
+                    background-color: #FAD725;
+                    border: 0px solid black;
+                    color: black
+                }
+            }
+        }
+        
     }
+
 }
 
 
@@ -142,6 +248,10 @@ color: #828282;}
     @include img-style(auto, 90% )
 
 }
+.bottom-input{
+    outline: none;
+}
+
 
 @media (min-width:768px) {
     .reasons-item{

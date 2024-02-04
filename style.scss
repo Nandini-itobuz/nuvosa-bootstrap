@@ -14,6 +14,23 @@
   font-size: $size;
   font-weight: $weight;
 }
+
+.grey-background {
+  background-color: #f2f2f2;
+}
+
+.grey-text {
+  color: #828282;
+}
+
+.blue-text {
+  color: #6f77f1;
+}
+
+.grey-font {
+  @include text-style(13px, 400);
+}
+
 /*nav*/
 .nav-outline {
   outline: none !important;
@@ -78,6 +95,8 @@
   cursor: pointer;
 }
 
+/*optimizing webstie*/
+
 .website-text {
   width: 90% !important;
   text-align: center;
@@ -89,9 +108,7 @@
   }
 }
 
-.grey-background {
-  background-color: #f2f2f2;
-}
+
 
 #one {
   background-image: url("images/optimizing-website/one.svg");
@@ -120,14 +137,6 @@
   background-color: white;
 }
 
-.grey-text {
-  color: #828282;
-}
-
-.blue-text {
-  color: #6f77f1;
-}
-
 .card-text {
   @include text-style(13px, 400);
 }
@@ -140,19 +149,23 @@
   margin-top: 150px !important;
 }
 
-.grey-font {
-  @include text-style(13px, 400);
-}
+/*solutions*/
 
 .solution-img {
   @include img-style(35vh, 70vw);
 }
 
+.solutions {
+  background-color: #fafafa;
+}
+
+/*stats*/
 .stats-item {
   cursor: pointer;
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
 }
 
+/*client*/
 .client-main::-webkit-scrollbar {
   display: none;
 }
@@ -163,9 +176,7 @@
   background-position: top left;
 }
 
-.solutions {
-  background-color: #fafafa;
-}
+/*reasons*/
 
 .reason-item {
   &:hover {
@@ -178,12 +189,20 @@
   background-color: #fafafa;
 }
 
+/*what-seo*/
+
+.what-seo-img {
+  @include img-style(auto, 90%);
+}
+
 .seo-item {
   &:hover {
     box-shadow: 5px 25px 37px 0px rgba(2, 22, 5, 0.06);
     cursor: pointer;
   }
 }
+
+/*web-speed*/
 
 .web-speed-img {
   @include img-style(auto, 75vw);
@@ -192,6 +211,8 @@
 .web-speed-input {
   outline: none !important;
 }
+
+/*plans*/
 
 .plans-item {
   background-color: white;
@@ -227,19 +248,20 @@
   }
 }
 
+/*team*/
+
 .team-img {
   @include img-style(auto, 34%);
   margin-left: auto;
   margin-right: auto;
 }
+/*bottom*/
+
 
 .bottom-btn {
   background-color: #6f77f1 !important;
 }
 
-.what-seo-img {
-  @include img-style(auto, 90%);
-}
 .bottom-input {
   outline: none;
 }

@@ -5,6 +5,23 @@
   font-family: Poppins;
 }
 
+.grey-background {
+  background-color: #f2f2f2;
+}
+
+.grey-text {
+  color: #828282;
+}
+
+.blue-text {
+  color: #6f77f1;
+}
+
+.grey-font {
+  font-size: 13px;
+  font-weight: 400;
+}
+
 /*nav*/
 .nav-outline {
   outline: none !important;
@@ -67,6 +84,7 @@
   cursor: pointer;
 }
 
+/*optimizing webstie*/
 .website-text {
   width: 90% !important;
   text-align: center;
@@ -74,10 +92,6 @@
 
 .web-list:hover {
   border-bottom: 4px solid #6f77f1;
-}
-
-.grey-background {
-  background-color: #f2f2f2;
 }
 
 #one {
@@ -106,14 +120,6 @@
   background-color: white;
 }
 
-.grey-text {
-  color: #828282;
-}
-
-.blue-text {
-  color: #6f77f1;
-}
-
 .card-text {
   font-size: 13px;
   font-weight: 400;
@@ -127,21 +133,23 @@
   margin-top: 150px !important;
 }
 
-.grey-font {
-  font-size: 13px;
-  font-weight: 400;
-}
-
+/*solutions*/
 .solution-img {
   height: 35vh;
   width: 70vw;
 }
 
+.solutions {
+  background-color: #fafafa;
+}
+
+/*stats*/
 .stats-item {
   cursor: pointer;
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
 }
 
+/*client*/
 .client-main::-webkit-scrollbar {
   display: none;
 }
@@ -152,10 +160,7 @@
   background-position: top left;
 }
 
-.solutions {
-  background-color: #fafafa;
-}
-
+/*reasons*/
 .reason-item:hover {
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.9);
   cursor: pointer;
@@ -165,11 +170,18 @@
   background-color: #fafafa;
 }
 
+/*what-seo*/
+.what-seo-img {
+  height: auto;
+  width: 90%;
+}
+
 .seo-item:hover {
   box-shadow: 5px 25px 37px 0px rgba(2, 22, 5, 0.06);
   cursor: pointer;
 }
 
+/*web-speed*/
 .web-speed-img {
   height: auto;
   width: 75vw;
@@ -179,6 +191,7 @@
   outline: none !important;
 }
 
+/*plans*/
 .plans-item {
   background-color: white;
 }
@@ -214,6 +227,7 @@
   color: black;
 }
 
+/*team*/
 .team-img {
   height: auto;
   width: 34%;
@@ -221,13 +235,9 @@
   margin-right: auto;
 }
 
+/*bottom*/
 .bottom-btn {
   background-color: #6f77f1 !important;
-}
-
-.what-seo-img {
-  height: auto;
-  width: 90%;
 }
 
 .bottom-input {

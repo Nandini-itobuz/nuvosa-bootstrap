@@ -36,6 +36,10 @@
   width: 60vw;
 }
 
+.hero-team-heading {
+  width: 200px;
+}
+
 .man-1 {
   margin-top: 4%;
 }
@@ -44,7 +48,7 @@
 .man-3,
 .man-4,
 .add {
-  margin-left: -11%;
+  margin-left: -15%;
 }
 
 #diamonds {
@@ -77,26 +81,26 @@
 }
 
 #one {
-  background-image: url("images/optimizing-website/1.svg");
+  background-image: url("images/optimizing-website/one.svg");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 #two {
-  background-image: url("images/optimizing-website/2.svg");
+  background-image: url("images/optimizing-website/two.svg");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 #three {
-  background-image: url("images/optimizing-website/3.svg");
+  background-image: url("images/optimizing-website/three.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-color: white;
 }
 
 #four {
-  background-image: url("images/optimizing-website/4.svg");
+  background-image: url("images/optimizing-website/four.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-color: white;
@@ -282,10 +286,10 @@
     width: 100% !important;
   }
   .hero-team {
-    width: 19%;
-    background-color: transparent;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 3.17px 52.298px 0px rgba(0, 0, 0, 0.1);
-    top: 69%;
-    right: 34%;
+    bottom: 15%;
+    right: 75%;
   }
 }/*# sourceMappingURL=style.css.map */

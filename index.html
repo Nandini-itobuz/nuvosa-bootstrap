@@ -8,36 +8,41 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  
 </head>
 
+<body id="body">
 <!--nav-bar-->
 <section class="navbar navbar-expand-lg container">
   <div class="container ps-4">
-    <a class="navbar-brand fw-medium fs-1" href="#">nuvosa<img src="images/nav/red-dot.svg"></a>
+    <a class="navbar-brand fw-medium fs-1 navbar-theme" href="#">nuvosa<img src="images/nav/red-dot.svg"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon "></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto me-5 gap-4">
         <li class="nav-item nav-list">
-          <a class="nav-link active " aria-current="page" href="#">Home</a>
+          <a class="nav-link active navbar-theme" aria-current="page" href="#" >Home</a>
         </li>
         <li class="nav-item nav-list">
-          <a class="nav-link active " aria-current="page" href="#">Project</a>
+          <a class="nav-link active navbar-theme" aria-current="page" href="#">Project</a>
         </li>
         <li class="nav-item nav-list">
-          <a class="nav-link active " aria-current="page" href="#">Blog</a>
+          <a class="nav-link active navbar-theme" aria-current="page" href="#">Blog</a>
         </li>
         <li class="nav-item nav-list">
-          <a class="nav-link active " aria-current="page" href="#">Pricing</a>
+          <a class="nav-link active navbar-theme" aria-current="page" href="#">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active nav-list" aria-current="page" href="#">Contact</a>
+          <a class="nav-link active nav-list navbar-theme" aria-current="page" href="#">Contact</a>
         </li>
-      </ul>
+        </ul>
+        <img src="images/theme/moon-regular.svg" id="toggle-btn" class="theme-img">
+
       <form class="d-flex justify-content-end" role="search">
-        <input class="rounded-1 text-center me-2 w-50 border border-dark pl-5 nav-outline letstalk" type="search"
+        <input class="rounded-1 text-center me-2 w-50 border border-dark pl-5 nav-outline letstalk  navbar-theme" type="search"
           placeholder="Let's Talk" aria-label="Search">
         <button class="bg-warning p-2 border border-0 rounded-1"><img class="w-50" src="images/nav/search.png"></button>
       </form>
@@ -48,7 +53,7 @@
 <!--hero-->
 <section class="container d-flex  flex-md-row flex-column justify-content-center align-items-center" id="diamonds">
   <div class=" order-2 order-md-1 px-4 ">
-    <h1 class="fw-bold  hero-heading text-md-start text-center pe-lg-3 ">Increase your web traffic with our &nbsp;<img
+    <h1 class="fw-bold  hero-heading text-md-start text-center pe-lg-3 red-text ">Increase your web traffic with our &nbsp;<img
         class="w-25" src="images/hero-section/expert.svg"></h1>
     <p class="  pe-md-5 mt-4  grey-text hero-details grey-font text-md-start text-center ">It is a long established fact
       that a reader will be distracted by the readable content of a page when It is a long .
@@ -80,32 +85,35 @@
   <div class="card-group-v1 ">
     <span class="d-inline-block p-3"><img src="images/management/social-media.svg"
         class="card-img-top w-25 float-start me-3" alt="...">
-      <div class="mt-2 fw-medium fs-4">Social Media Management</div>
+      <div class="mt-2 fw-medium fs-4 ms-4">Social Media Management</div>
     </span>
     <p class="card-text grey-text pe-5 ps-3 pt-3 grey-text">It is a long established fact that a reader will be
       distracted by the readable content .It is a long established fact that .</p>
     <div class="d-flex justify-content-end"><img src="images/management/arrow-right.svg"></div>
   </div>
+  
 
-  <div class="card-group-v1">
-    <span class="d-inline-block p-3"><img src="images/management/email.svg" class="card-img-top w-25 float-start me-3"
-        alt="...">
-      <div class="mt-2 fw-medium fs-4">Email Marketing</div>
-    </span>
-    <p class="card-text grey-text pe-5 ps-3 pt-3 grey-text">It is a long established fact that a reader will be
-      distracted by the readable content .It is a long established fact that .</p>
-    <div class="d-flex justify-content-end "><img src="images/management/arrow-right.svg"></div>
-  </div>
-
-  <div class="card-group-v1">
-    <span class="d-inline-block p-3"><img src="images/management/seo.png" class="card-img-top w-25 float-start me-3"
-        alt="...">
-      <div class="mt-2 fw-medium fs-4">SEO Management</div>
+  <div class="card-group-v1 ">
+    <span class="d-inline-block p-3"><img src="images/management/email.svg"
+        class="card-img-top w-25 float-start me-3" alt="...">
+      <div class="mt-2 fw-medium fs-4 ms-4">Email Management</div>
     </span>
     <p class="card-text grey-text pe-5 ps-3 pt-3 grey-text">It is a long established fact that a reader will be
       distracted by the readable content .It is a long established fact that .</p>
     <div class="d-flex justify-content-end"><img src="images/management/arrow-right.svg"></div>
   </div>
+  
+
+  <div class="card-group-v1 ">
+    <span class="d-inline-block p-3"><img src="images/management/seo.png"
+        class="card-img-top w-25 float-start me-3" alt="...">
+        <div class="mt-2 fw-medium fs-4 ms-5">SEO Management</div>
+    </span>
+    <p class="card-text grey-text pe-5 ps-3 pt-3 grey-text">It is a long established fact that a reader will be
+      distracted by the readable content .It is a long established fact that .</p>
+    <div class="d-flex justify-content-end"><img src="images/management/arrow-right.svg"></div>
+  </div>
+  
 </section>
 
 <!--optimizing webstie-->
@@ -117,19 +125,19 @@
       reader will be distracted by the readable content of a page when It is a long .</span>
   </div>
 
-  <div class="container d-flex justify-content-center mt-3 mt-md-5">
-    <div class="row ">
+  <div class="container">
+    <div class="row  d-flex justify-content-center mt-5">
 
-      <div class="col-sm-6 col-lg-3  mb-3 mb-md-5 pt-4 ps-4 pe-4 web-list " id="one">
+      <div class="col-sm-6 col-lg-3  mb-3 mb-md-5  pt-4 ps-4 pe-4 web-list one web-theme " >
         <img src="images/optimizing-website/keyword.svg" class="card-img-top  ms-lg-3" alt="..." style="width: 15%;">
-        <div class="card-body mt-3 mt-lg-5">
-          <h5 class="card-title fw-medium">Keyword Research</h5>
+        <div class="card-body mt-3 mt-lg-5" >
+          <h5 class="card-title fw-medium ">Keyword Research</h5>
           <p class="card-text grey-text mt-3 mt-lg-5 mb-lg-5 p-2">It is a long established fact that a reader will be
             distracted by the It is a long established .</p>
         </div>
       </div>
 
-      <div class="col-sm-6 col-lg-3 mb-3 mb-md-5 pt-4 ps-4 pe-4 web-list" id="two">
+      <div class="col-sm-6 col-lg-3 mb-3 mb-md-5 pt-4 ps-4 pe-4 web-list two web-theme" >
         <img src="images/optimizing-website/content.svg" class="card-img-top  ms-lg-3" alt="..." style="width: 15%;">
         <div class="card-body mt-3 mt-lg-5">
           <h5 class="card-title fw-medium">Content Optimization</h5>
@@ -138,16 +146,16 @@
         </div>
       </div>
 
-      <div class="col-sm-6 col-lg-3 mb-3 mb-md-5  pt-4 ps-4 pe-4 web-list" id="three">
-        <img src="images/optimizing-website/target.svg" class="card-img-top  ms-lg-3" alt="..." style="width: 15%;">
+      <div class="col-sm-6 col-lg-3 mb-3 mb-md-5  pt-4 ps-4 pe-4 web-list three web-theme">
+        <img src="images/optimizing-website/target.svg" class="card-img-top  ms-lg-3  " alt="..." style="width: 15%;">
         <div class="card-body mt-3 mt-lg-5">
-          <h5 class="card-title fw-medium">Target Analysis</h5>
+          <h5 class="card-title fw-medium mb-5 ">Target<br> Analysis</h5>
           <p class="card-text grey-text mt-3 mt-lg-5 mb-lg-5 p-2">It is a long established fact that a reader will be
             distracted by the It is a long established .</p>
         </div>
       </div>
 
-      <div class="col-sm-6 col-lg-3 mb-3 mb-md-5 pt-4 ps-4 pe-4 web-list" id="four">
+      <div class="col-sm-6 col-lg-3 mb-3 mb-md-5 pt-4 ps-4 pe-4 web-list four web-theme" >
         <img src="images/optimizing-website/texting.svg" class="card-img-top  ms-lg-3" alt="..." style="width: 15%;">
         <div class="card-body mt-3 mt-lg-5">
           <h5 class="card-title fw-medium">Continueous Testing</h5>
@@ -162,10 +170,10 @@
 </section>
 
 <!--Solutions-->
-<section class="container-fluid margin-class mx-auto solutions mt-5">
+<section class="container-fluid margin-class mx-auto solutions mt-5 grey-background">
   <div class="row d-flex justify-content-center gap-md-3">
     <div class="col-lg-5 col-md-6 py-md-4 order-md-1 order-2">
-      <h2 class="fw-medium text-center text-md-start  solution-text">Perfect Solution For Your <span
+      <h2 class="fw-medium text-center text-md-start  solution-text ">Perfect Solution For Your <span
           class="blue-text">Business</span></h2>
       <p class="grey-text text-center text-md-start mt-3 grey-weight grey-font ">It is a long established fact that a
         reader will be distracted by the It is a long established .
@@ -211,9 +219,9 @@
 </section>
 
 <!--reasons-->
-<section class="container-fluid mt-5 reasons py-5">
-  <div class=" mx-auto reasons-item">
-    <h2 class="fw-medium text-center">why you should <span class="blue-text">choose us.</span></h2>
+<section class="container-fluid mt-5 reasons py-5 grey-background">
+  <div class=" mx-auto reasons-item ">
+    <h2 class="fw-medium text-center ">why you should <span class="blue-text">choose us.</span></h2>
     <p class=" text-center grey-font grey-text mt-3">It is a long established fact that a reader will be distracted by
       the readable content .It is a long established fact that a reader .It is a long established fact that a reader
       will be .</p>
@@ -221,30 +229,30 @@
 
   <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center gap-3 mt-5 reasons">
 
-    <div class="card mt-3 reason-item" style="width: 18rem;">
+    <div class="card mt-3 reason-item black-background" style="width: 18rem;">
       <img src="images/reasons/circle.svg" class="card-img-top" alt="...">
       <div class="card-body text-center">
-        <h6 class="card-title mt-3 ">See optimazadion</h6>
+        <h6 class="card-title mt-3 navbar-theme">See optimazadion</h6>
         <p class="card-text  grey-text mt-3 p-3">It is a long established fact that a reader will be distracted by.It is
           a long established.</p>
         <a href="#" class="btn btn-warning ">Learn More</a>
       </div>
     </div>
 
-    <div class="card mt-3 reason-item" style="width: 18rem;">
+    <div class="card mt-3 reason-item black-background" style="width: 18rem;">
       <img src="images/reasons/cubes.svg" class="card-img-top" alt="...">
       <div class="card-body text-center">
-        <h6 class="card-title mt-3 ">See optimazadion</h6>
+        <h6 class="card-title mt-3 navbar-theme">See optimazadion</h6>
         <p class="card-text  grey-text mt-3 p-3">It is a long established fact that a reader will be distracted by.It is
           a long established.</p>
         <a href="#" class="btn btn-warning ">Learn More</a>
       </div>
     </div>
 
-    <div class="card mt-3 reason-item" style="width: 18rem;">
+    <div class="card mt-3 reason-item black-background" style="width: 18rem;">
       <img src="images/reasons/circle.svg" class="card-img-top" alt="...">
       <div class="card-body text-center">
-        <h6 class="card-title mt-3 ">See optimazadion</h6>
+        <h6 class="card-title mt-3 navbar-theme">See optimazadion</h6>
         <p class="card-text  grey-text mt-3 p-3">It is a long established fact that a reader will be distracted by.It is
           a long established.</p>
         <a href="#" class="btn btn-warning ">Learn More</a>
@@ -342,7 +350,7 @@
   <div class=" ps-md-5 p-3 order-2 order-md-1 ">
     <h2>Check Your Website <span class="blue-text">Speed</span></h2>
     <p class="grey-text grey-font ">It is a long established fact that a reader will be distracted by the readable
-      content .<br>It is a long established fact that a reader .It is a long.</p>
+      content .It is a long established fact that a reader .It is a long.</p>
     <span class="d-flex flex-md-row flex-column justify-content-center gap-1">
       <input class="p-1 mb-1 border border-0 grey-background web-speed-input" type="text" placeholder="Web URL">
       <input class="p-1 mb-1 border border-0 grey-background web-speed-input" type="email" placeholder="Your Email">
@@ -355,7 +363,7 @@
 </section>
 
 <!--plans-->
-<section class="container mt-5  p-5" style="background-color: #fafafa;">
+<section class="container-fluid mt-5  p-5 grey-background">
   <div class="text-center">
     <h2>Our plans</h2>
     <p class="grey-text grey-font">Choose the right SEO for you</p>
@@ -363,21 +371,21 @@
 
   <div class="mt-5 d-flex flex-md-row flex-column justify-content-center align-items-center gap-3">
 
-    <div class=" text-center mb-3 pt-4  plans-item " style="width: 18rem;">
+    <div class=" text-center mb-3 pt-4 plans-item black-background" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="b mt-3">Plus</h5>
+        <h5 class=" mt-3">Plus</h5>
         <h2 class="fw-medium fs-1 mt-md-5"><sup>$</sup>46<sub class="grey-font">/Month</sub></h2>
-        <div class="card-text">
-          <p class="my-md-2 grey-font ">408GB Bandwidth</p>
-          <p class="my-md-2 grey-font ">Business & Finance Analysing</p>
-          <p class="my-md-2 grey-font ">24 Hour Support</p>
-          <p class="my-md-2 grey-font ">Customer Management</p>
-        </div>
-        <a href="#" class="btn m-3 grey-font mb-5">Get Started</a>
+        <p class="card-text">
+        <div class="my-md-2 grey-font ">408GB Bandwidth</div>
+        <div class="my-md-2 grey-font ">Business & Finance Analysing</div>
+        <div class="my-md-2 grey-font">24 Hour Support</div>
+        <div class="my-md-2 grey-font ">Customer Management</div>
+        </p>
+        <a href="#" class="btn  m-3 grey-font  border-1 mb-5 navbar-theme">Get Started</a>
       </div>
     </div>
 
-    <div class=" text-center mb-3 pt-4 plans-item" style="width: 18rem;">
+    <div class=" text-center mb-3 pt-4 plans-item black-background" style="width: 18rem;">
       <div class="card-body">
         <h5 class=" mt-3">Beginner</h5>
         <h2 class="fw-medium fs-1 mt-md-5"><sup>$</sup>66<sub class="grey-font">/Month</sub></h2>
@@ -387,11 +395,11 @@
         <div class="my-md-2 grey-font">24 Hour Support</div>
         <div class="my-md-2 grey-font ">Customer Management</div>
         </p>
-        <a href="#" class="btn  m-3 grey-font  mb-5">Get Started</a>
+        <a href="#" class="btn  m-3 grey-font  border-1  mb-5 navbar-theme">Get Started</a>
       </div>
     </div>
 
-    <div class=" border-md-0 text-center pt-4 mb-3 plans-item" style="width: 18rem;">
+    <div class=" border-md-0 text-center pt-4 mb-3 plans-item black-background" style="width: 18rem;">
       <div class="card-body">
         <h5 class="mt-3">Advanced</h5>
         <h2 class="fw-medium fs-1 mt-md-5"><sup>$</sup>86<sub class="grey-font">/Month</sub></h2>
@@ -401,7 +409,7 @@
         <div class="my-md-2 grey-font ">24 Hour Support</div>
         <div class="my-md-2 grey-font ">Customer Management</div>
         </p>
-        <a href="#" class="btn  m-3 grey-font  mb-5">Get Started</a>
+        <a href="#" class="btn  m-3 grey-font mb-5 navbar-theme">Get Started</a>
       </div>
     </div>
 
@@ -423,11 +431,11 @@
   <div class="container ">
     <div class="team row d-flex justify-content-center align-items-center mx-auto  mt-5 flex-wrap gap-md-5 gap-2">
 
-      <div class=" d-flex flex-sm-column flex-row mb-1 card text-center mb-3  rounded-0 team-shadow pe-5 pe-sm-0"
+      <div class=" d-flex flex-sm-column flex-row mb-1 card text-center mb-3  rounded-0 team-shadow pe-5 pe-sm-0 grey-background"
         style="width: 16rem;">
         <img class="team-img pt-3" src="images/team/women-1.svg" alt="...">
         <div class="card-body mt-2">
-          <h5 class="card-title">Muriel Whee</h5>
+          <h5 class="card-title navbar-theme">Muriel Whee</h5>
           <span class=" grey-text grey-font ">Marketing Manager</span>
           <div class="d-flex gap-3 justify-content-center mt-4"><img class="team-icon" src="images/team/google.svg"><img
               class="team-icon" src="images/team/instagram.svg"><img class="team-icon"
@@ -435,11 +443,11 @@
         </div>
       </div>
 
-      <div class=" d-flex flex-sm-column flex-row  mb-1 card text-center mb-3 rounded-0 team-shadow pe-5 pe-sm-0"
+      <div class=" d-flex flex-sm-column flex-row  mb-1 card text-center mb-3 rounded-0 team-shadow pe-5 pe-sm-0 grey-background"
         style="width: 16rem;">
         <img class="team-img pt-3" src="images/team/women-2.svg" alt="...">
         <div class="card-body mt-2">
-          <h5 class="card-title">John Doe</h5>
+          <h5 class="card-title navbar-theme">John Doe</h5>
           <span class=" grey-text grey-font ">Marketing Manager</span>
           <div class="d-flex gap-3 justify-content-center mt-4"><img class="team-icon" src="images/team/google.svg"><img
               class="team-icon" src="images/team/instagram.svg"><img class="team-icon"
@@ -447,11 +455,11 @@
         </div>
       </div>
 
-      <div class=" d-flex flex-sm-column flex-row  mb-1 card text-center mb-3 rounded-0 team-shadow pe-5 pe-sm-0"
+      <div class=" d-flex flex-sm-column flex-row  mb-1 card text-center mb-3 rounded-0 team-shadow pe-5 pe-sm-0 grey-background"
         style="width: 16rem;">
         <img class="team-img pt-3" src="images/team/women-3.svg" alt="...">
         <div class="card-body mt-2">
-          <h5 class="card-title">Clay Porter</h5>
+          <h5 class="card-title navbar-theme">Clay Porter</h5>
           <span class=" grey-text grey-font ">Marketing Manager</span>
           <div class="d-flex gap-3 justify-content-center mt-4"><img class="team-icon" src="images/team/google.svg"><img
               class="team-icon" src="images/team/instagram.svg"><img class="team-icon"
@@ -459,11 +467,11 @@
         </div>
       </div>
 
-      <div class="d-flex flex-sm-column flex-row mb-1 card text-center mb-3 rounded-0 team-shadow pe-5 pe-sm-0"
+      <div class="d-flex flex-sm-column flex-row mb-1 card text-center mb-3 rounded-0 team-shadow pe-5 pe-sm-0 grey-background"
         style="width: 16rem;">
         <img class="team-img pt-3" src="images/team/women-4.svg" alt="...">
         <div class="card-body mt-2">
-          <h5 class="card-title">Doug Norm</h5>
+          <h5 class="card-title navbar-theme">Doug Norm</h5>
           <span class=" grey-text grey-font ">Marketing Manager</span>
           <div class="d-flex gap-3 justify-content-center mt-4"><img class="team-icon" src="images/team/google.svg"><img
               class="team-icon" src="images/team/instagram.svg"><img class="team-icon"
@@ -486,37 +494,37 @@
   </div>
 
   <div class="d-flex overflow-auto client-main gap-5 mt-md-3 mt-0">
-    <div class="card text-center flex-shrink-0 p-3 client-card" style="width: 350px;">
+    <div class="card text-center flex-shrink-0 p-3 client-card grey-background" style="width: 350px;">
       <div class="card-body">
-        <p class="card-text grey-font grey-text">It is a long established fact that a reader will be distracted by the
+        <p class="card-text grey-font grey-text ">It is a long established fact that a reader will be distracted by the
           readable content .It is a long established fact that a reader </p>
         <img src="images/clients/client-1.svg">
-        <div class="grey-font mt-3">Clay Poter</div>
+        <div class="grey-font mt-3 navbar-theme">Clay Poter</div>
         <div class="grey-font grey-text">Ship Builder</div>
       </div>
     </div>
 
-    <div class="card text-center flex-shrink-0 p-3 client-card" style="width: 350px;">
+    <div class="card text-center flex-shrink-0 p-3 client-card grey-background" style="width: 350px;">
       <div class="card-body">
         <p class="card-text grey-font grey-text">It is a long established fact that a reader will be distracted by the
           readable content .It is a long established fact that a reader </p>
         <img src="images/clients/client-1.svg">
-        <div class="grey-font mt-3">Clay Poter</div>
+        <div class="grey-font mt-3 navbar-theme">Clay Poter</div>
         <div class="grey-font grey-text">Ship Builder</div>
       </div>
     </div>
 
-    <div class="card text-center flex-shrink-0 p-3 client-card" style="width: 350px;">
+    <div class="card text-center flex-shrink-0 p-3 client-card grey-background" style="width: 350px;">
       <div class="card-body">
         <p class="card-text grey-font grey-text">It is a long established fact that a reader will be distracted by the
           readable content .It is a long established fact that a reader </p>
         <img src="images/clients/client-1.svg">
-        <div class="grey-font mt-3">Clay Poter</div>
+        <div class="grey-font mt-3 navbar-theme">Clay Poter</div>
         <div class="grey-font grey-text">Ship Builder</div>
       </div>
     </div>
 
-    <div class="card text-center flex-shrink-0 p-3 client-card" style="width: 350px;">
+    <div class="card text-center flex-shrink-0 p-3 client-card grey-background" style="width: 350px;">
       <div class="card-body">
         <p class="card-text grey-font grey-text">It is a long established fact that a reader will be distracted by the
           readable content .It is a long established fact that a reader </p>
@@ -531,38 +539,38 @@
 </section>
 
 <!--bottom-->
-<section class="container border border-1 rounded-1 py-5 grey-background margin-class">
+<section class="container border border-1 rounded-1 py-5 grey-background margin-class border-0">
   <div class="text-center">
-    <h2 class="mx-auto">Subscribe & find the perfect Cosmetics</h2>
+    <h2 class="mx-auto ">Subscribe & find the perfect Cosmetics</h2>
     <p class="grey-text grey-font w-50 mx-auto">Enter your email and get updated new products & news </p>
   </div>
 
   <form class="d-flex flex-md-row flex-column mx-auto gap-3 w-75 form-inputs justify-content-center align-items-center">
-    <input type="email" class="p-2  border border-0 rounded-1 " placeholder="Name">
-    <input type="password" class="p-2  border border-0  rounded-1 web-speed-input" placeholder="your Email">
+    <input type="email" class="p-2  border border-1 rounded-1  " placeholder="Name">
+    <input type="password" class="p-2  border border-1  rounded-1 web-speed-input" placeholder="your Email">
     <button type="submit"
-      class="btn btn-default border border-1  bottom-btn text-light fw-semibold p-2">Subscribe</button>
+      class="btn btn-default border border-0  bottom-btn text-light fw-semibold p-2">Subscribe</button>
   </form>
 </section>
 
 <!--footer-->
 <section class="container mt-5 mb-3 text-center">
-  <a class="text-dark text-decoration-none fw-medium fs-1 mx-auto" href="#">nuvosa<img src="images/nav/red-dot.svg"></a>
+  <a class="navbar-brand fw-medium fs-1 navbar-theme" href="#">nuvosa<img src="images/nav/red-dot.svg"></a>
   <ul class="list-unstyled d-flex justify-content-center gap-md-5 gap-3 mt-3">
     <li>
-      <a class="text-decoration-none grey-font text-dark" aria-current="page" href="#">Overview</a>
+      <a class="text-decoration-none grey-font grey-text" aria-current="page" href="#">Overview</a>
     </li>
     <li>
-      <a class="text-decoration-none grey-font text-dark" aria-current="page" href="#">Pricing</a>
+      <a class="text-decoration-none grey-font grey-text" aria-current="page" href="#">Pricing</a>
     </li>
     <li>
-      <a class="text-decoration-none grey-font text-dark" aria-current="page" href="#">Carrers</a>
+      <a class="text-decoration-none grey-font grey-text" aria-current="page" href="#">Carrers</a>
     </li>
     <li>
-      <a class="text-decoration-none grey-font text-dark" aria-current="page" href="#">Help</a>
+      <a class="text-decoration-none grey-font grey-text" aria-current="page" href="#">Help</a>
     </li>
     <li>
-      <a class="text-decoration-none grey-font text-dark" aria-current="page" href="#">Privacy</a>
+      <a class="text-decoration-none grey-font grey-text" aria-current="page" href="#">Privacy</a>
     </li>
   </ul>
 
@@ -577,8 +585,11 @@
   </div>
 </section>
 
+
+<script src="./index.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

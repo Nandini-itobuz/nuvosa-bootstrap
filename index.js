@@ -1,6 +1,6 @@
 const greyBackgroundElements = document.querySelectorAll(".grey-background");
-const navbartheme = document.querySelectorAll(".navbar-theme");
-const blackbg = document.querySelectorAll(".black-background");
+const navbarTheme = document.querySelectorAll(".navbar-theme");
+const blackBg = document.querySelectorAll(".black-background");
 const toggleBtn = document.getElementById("toggle-btn");
 let flag = localStorage.getItem('data-theme') || [];
 localStorage.setItem("data-theme", '0')
@@ -20,11 +20,11 @@ function themeChange(){
     element.classList.toggle("dark-theme-grey-bg");
   });
 
-  blackbg.forEach(function (element) {
+  blackBg.forEach(function (element) {
     element.classList.toggle("black-theme");
   });
 
-  navbartheme.forEach(function (element) {
+  navbarTheme.forEach(function (element) {
     element.classList.toggle("white-font");
   });
 }

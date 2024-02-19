@@ -19,21 +19,24 @@
 }
 
 .dark-theme {
-  background: black;
+  background: #001845;
   color: white;
 }
 
 .black-theme {
-  background-color: black !important;
+  background-color: #001845 !important;
 }
 
 .dark-theme-grey-bg {
-  background: #202020 !important;
+  background: #002855 !important;
 }
 
 .theme-img {
   width: 2.5%;
   background: none;
+}
+.theme-img:hover {
+  cursor: pointer;
 }
 
 body {
@@ -99,6 +102,9 @@ body {
 .man-1 {
   margin-top: 4%;
 }
+.man-1:hover {
+  cursor: pointer;
+}
 
 .man-2,
 .man-3,
@@ -106,8 +112,15 @@ body {
 .add {
   margin-left: -15%;
 }
+.man-2:hover,
+.man-3:hover,
+.man-4:hover,
+.add:hover {
+  cursor: pointer;
+}
 
 #diamonds {
+  background-image: url(images/Group-box.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -197,9 +210,6 @@ body {
 }
 
 /*reasons*/
-.reason-item {
-  border: 1px solid #828282 !important;
-}
 .reason-item:hover {
   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.9);
   cursor: pointer;

@@ -18,21 +18,24 @@
 }
 
 .dark-theme {
-  background: black;
+  background: #001845;
   color: white;
 }
 
 .black-theme {
-  background-color: black !important;
+  background-color: #001845 !important;
 }
 
 .dark-theme-grey-bg {
-  background: #202020 !important;
+  background: #002855 !important;
 }
 
 .theme-img {
   width: 2.5%;
   background: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 body {
@@ -109,17 +112,23 @@ body {
 }
 
 .man-1 {
+  &:hover {
+    cursor: pointer;
+  }
   margin-top: 4%;
 }
 .man-2,
 .man-3,
 .man-4,
 .add {
+  &:hover {
+    cursor: pointer;
+  }
   margin-left: -15%;
 }
 
 #diamonds {
-  // background-image: url(images/Group-box.svg);
+  background-image: url(images/Group-box.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -193,10 +202,6 @@ body {
   @include img-style(35vh, 70vw);
 }
 
-// .solutions {
-//   background-color: #fafafa;
-// }
-
 /*stats*/
 .stats-item {
   cursor: pointer;
@@ -217,7 +222,6 @@ body {
 /*reasons*/
 
 .reason-item {
-  border: 1px solid #828282 !important;
   &:hover {
     box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.9);
     cursor: pointer;
@@ -242,7 +246,6 @@ body {
 .web-speed-img {
   @include img-style(auto, 75vw);
 }
-
 .web-speed-input {
   outline: none !important;
 }

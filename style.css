@@ -120,7 +120,6 @@ body {
 }
 
 #diamonds {
-  background-image: url(images/Group-box.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }

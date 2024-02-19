@@ -3,6 +3,7 @@ const navbarTheme = document.querySelectorAll(".navbar-theme");
 const blackBg = document.querySelectorAll(".black-background");
 const toggleBtn = document.getElementById("toggle-btn");
 let flag = localStorage.getItem('data-theme') || [];
+
 localStorage.setItem("data-theme", '0')
 
 function themeChange(){
